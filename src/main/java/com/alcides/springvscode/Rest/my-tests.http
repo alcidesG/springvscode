@@ -1,0 +1,41 @@
+GET http://localhost:8080 HTTP/1.1
+
+
+POST http://localhost:8080 HTTP/1.1
+Content-Type: application/joson 
+(value = "/")
+{
+    "Result":
+}
+
+POST http://localhost:8080 HTTP/1.1
+Content-Type: application/joson
+(value="/sum?"+"a="+a+"&"+"b="+b)
+{
+    "Result":
+}
+
+POST http://localhost:8080 HTTP/1.1
+Content-Type: application/joson
+(value="/sub?"+"a="+a+"&"+"b="+b)
+{
+    "Result":new CalculatorController().getSub();
+}
+
+POST http://localhost:8080 HTTP/1.1
+Content-Type: application/joson 
+(value="/div?"+"a="+a+"&"+"b="+b)
+{
+    "Result":
+}
+
+POST http://localhost:8080 HTTP/1.1
+Content-Type: application/joson
+(value="/mult?"+"a="+a+"&"+"b="+b)
+{
+    "Result":
+}
+
+
+
+

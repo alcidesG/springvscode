@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<header>
+    <title>Using the "Accept" request header in REST APIs</title>
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <meta charset="utf-8">
+</header>
+<body>
+    <h1>Using the "Accept" request header in REST APIs</h1>
+    <script>
+        fetch("./Calculator.php",{
+            method: "GET",
+            headers:{
+                "Accept":"application/joson"
+            }
+        }).then(response=>{
+            return response.text();
+        }).then(console.log);
+    </script>
+</body>
